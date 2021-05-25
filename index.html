@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo</title>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDHoIg3zGMGNLq7VrVKO_s73yZwVQFRy1A",
+            authDomain: "artigo-6d2c3.firebaseapp.com",
+            //artigo-6d2c3.firebaseapp.com
+            projectId: "artigo-6d2c3",
+            storageBucket: "",
+            messagingSenderId: "723084328080",
+            appId: "1:723084328080:web:d5978efce7eb929ce0ac15"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+
+        function writeUserData() {
+            firebase.database().ref('users').push({
+                notificados: document.getElementById('notificados').value,
+                suspeitos: document.getElementById('suspeitos').value,
+                descartados: document.getElementById('descartados').value,
+                confirmados: document.getElementById('confirmados').value,
+                hospitalizados: document.getElementById('hospitalizados').value,
+                tratamento: document.getElementById('tratamento').value,
+                curados: document.getElementById('curados').value,
+                obitos: document.getElementById('obitos').value,
+                dia:  document.getElementById('dia').value
+            });
+            getData();
+        }
+
+        function getData()
+        {
+            firebase.database().ref('/users').once('value', function(snapshot)
+                {
+                    snapshot.forEach(function(childSnapshot) {
+                        var childKey = childSnapshot.key;
+                        var childData = childSnapshot.val();
+                        document.getElementById("data").innerHTML = 
+                        "Notificados: " + childData['notificados'] + ", Suspeitos " + childData['suspeitos'];
+                    })
+                }
+            )
+        }
+        getData();
+    </script>
+
+    <h1>Artigo</h1>
+    <input type="number" placeholder="Notificados" id="notificados"><br>
+    <input type="number" placeholder="Suspeitos" id="suspeitos"><br>
+    <input type="number" placeholder="Descartados" id="descartados"><br>
+    <input type="number" placeholder="Confirmados" id="confirmados"><br>
+    <input type="number" placeholder="Hospitalizados" id="hospitalizados"><br>
+    <input type="number" placeholder="Tratamento" id="tratamento"><br>
+    <input type="number" placeholder="Curados" id="curados"><br>
+    <input type="number" placeholder="Obitos" id="obitos"><br>
+    <input type="date" placeholder="Dia" id="dia"><br>
+    <button onclick = "writeUserData()">Enviar</button>
+    <p id="data"></p>
+</body>
+</html>
