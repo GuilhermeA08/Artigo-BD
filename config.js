@@ -1,3 +1,5 @@
+//Chart Line
+
 const labels = [
     'January',
     'February',
@@ -8,12 +10,29 @@ const labels = [
   ];
   const data = {
     labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
-    }]
+    datasets: 
+    [
+        {
+        label: 'Confirmados',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+        },
+        {
+            label: 'Curados',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            data: [0, 2, 5, 7, 20, 30, 45],
+        },
+        {
+            label: 'Mortes',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            data: [0, 10, 15, 2, 20, 30, 45],
+        }
+
+    ]
+
   };
 
 
@@ -31,15 +50,15 @@ const config = {
     config
   );
 
-
+//Chart bar
 var ctx = document.getElementById('myChart2');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Infectados por mês',
+            data: [33, 19, 43, 50, 27, 39],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -67,7 +86,6 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-
 
 
 // Chart Donout
