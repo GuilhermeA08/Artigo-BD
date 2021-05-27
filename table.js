@@ -1,5 +1,5 @@
 
-function SelectAllData()
+ function SelectAllData()
 {
     firebase.database().ref('dias').once('value',
         function(AllRecords){
@@ -22,8 +22,7 @@ function SelectAllData()
 }
 
 window.onload = SelectAllData;
-
-function AddItensToTable(notificados, suspeitos, descartados, confirmados, hospitalizados, tratamento, curados, obitos, dias){
+ function AddItensToTable(notificados, suspeitos, descartados, confirmados, hospitalizados, tratamento, curados, obitos, dias){
     var tbody = document.getElementById('tbody1');
     var trow = document.createElement('tr');
     var td1 = document.createElement('td');
@@ -58,3 +57,4 @@ function AddItensToTable(notificados, suspeitos, descartados, confirmados, hospi
 
     tbody.appendChild(trow);
 }
+
