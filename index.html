@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Artigo</h1>
-    <form action="#">
+    <form action="/" onSubmit="JavaScript:writeData()">
 
         <input type="number" placeholder="Notificados" id="notificados" required/><br />
         <input type="number" placeholder="Suspeitos" id="suspeitos" required/><br />
@@ -23,7 +23,7 @@
         <input type="number" placeholder="Curados" id="curados" required/><br />
         <input type="number" placeholder="Óbitos" id="obitos" required/><br />
         <input type="date" placeholder="Dia" id="dia" required/><br />
-        <input onclick="writeData()" type="submit"></input>
+        <input type="submit"></input>
     </form>
 
 
