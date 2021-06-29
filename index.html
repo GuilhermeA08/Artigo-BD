@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artigo</title>
-</head>
-<body>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
-    
-    <script src="firebase.js"></script>
-    <script src="write_data.js"></script>
-    
-
+  </head>
+  <body>
     <h1>Artigo</h1>
-    <input type="number" placeholder="Notificados" id="notificados"><br>
-    <input type="number" placeholder="Suspeitos" id="suspeitos"><br>
-    <input type="number" placeholder="Descartados" id="descartados"><br>
-    <input type="number" placeholder="Confirmados" id="confirmados"><br>
-    <input type="number" placeholder="Hospitalizados" id="hospitalizados"><br>
-    <input type="number" placeholder="Tratamento" id="tratamento"><br>
-    <input type="number" placeholder="Curados" id="curados"><br>
-    <input type="number" placeholder="Obitos" id="obitos"><br>
-    <input type="date" placeholder="Dia" id="dia"><br>
-    <button onclick = "writeData()">Enviar</button>
+    <form action="#">
+
+        <input type="number" placeholder="Notificados" id="notificados" required/><br />
+        <input type="number" placeholder="Suspeitos" id="suspeitos" required/><br />
+        <input type="number" placeholder="Descartados" id="descartados" required/><br />
+        <input type="number" placeholder="Confirmados" id="confirmados" required/><br />
+        <input
+        type="number"
+        placeholder="Hospitalizados"
+        id="hospitalizados"
+        required/><br />
+        <input type="number" placeholder="Tratamento" id="tratamento" required/><br />
+        <input type="number" placeholder="Curados" id="curados" required/><br />
+        <input type="number" placeholder="Óbitos" id="obitos" required/><br />
+        <input type="date" placeholder="Dia" id="dia" required/><br />
+        <input onclick="writeData()" type="submit"></input>
+    </form>
+
+
     <p id="data"></p>
 
     <table>
-        <thead>
-            <th>Notificados</th>
-            <th>Suspeitos</th>
-            <th>Descartados</th>
-            <th>Confirmados</th>
-            <th>Hospitalizados</th>
-            <th>Tratamento</th>
-            <th>Curados</th>
-            <th>Obitos</th>
-            <th>Dia</th>
-        </thead>
+      <thead>
+        <th>Notificados</th>
+        <th>Suspeitos</th>
+        <th>Descartados</th>
+        <th>Confirmados</th>
+        <th>Hospitalizados</th>
+        <th>Tratamento</th>
+        <th>Curados</th>
+        <th>Óbitos</th>
+        <th>Dia</th>
+      </thead>
 
-        <tbody id="tbody1">
-            
-        </tbody>
+      <tbody id="tbody1"></tbody>
     </table>
-</body>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
 
-<script src="table.js"></script>
-
+  <script src="firebase.js"></script>
+  <script src="write_data.js"></script>
+  <script src="table.js"></script>
 </html>
