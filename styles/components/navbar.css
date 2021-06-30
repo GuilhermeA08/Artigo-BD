@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  width: 90%;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.navbar__background {
+  width: 100%;
+  background-color: #112860;
+  border-radius: 4px;
+}
+
+.navbar__title {
+  font-weight: 700;
+}
+
+.navbar__pages {
+  font-weight: 700;
+  text-decoration: none;
+}
