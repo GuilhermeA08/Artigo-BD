@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <div class="row">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
 
-            <div class="column" style="width:650px">
-                <canvas id="myChart"></canvas>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles/pages/dashboard.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="width: 650px">
+        <canvas id="myChart"></canvas>
+      </div>
 
-            <div class="column" style="width:650px">
-                <canvas id="myChart2" ></canvas>
+      <div class="column" style="width: 650px">
+        <canvas id="myChart2"></canvas>
+      </div>
+    </div>
 
-            </div>
-            
-        </div>
-        
-        <div class="center" style="width:400px">
-            <canvas id="myChart3" ></canvas>
-        </div>
-        
-        
-    </body>
-    <script src="config.js"></script>
+    <div class="center" style="width: 400px">
+      <canvas id="myChart3"></canvas>
+    </div>
+  </body>
+  <script src="firebase.js"></script>
+  <script src="chart_data.js"></script>
+  <script src="chart_config.js"></script>
 </html>

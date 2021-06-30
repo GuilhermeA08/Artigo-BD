@@ -1,2 +1,7 @@
 # Artigo-BD
-## Código do artido da discplina BD2
+## Descrição:
+## Uso:
+## Tecnologias:
+## Screenshots:clearcle
+
+
