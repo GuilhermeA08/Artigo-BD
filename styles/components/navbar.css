@@ -11,7 +11,7 @@
 
 .navbar__background {
   width: 100%;
-  background-color: #112860;
+  background-color: var(--color-primary);
   border-radius: 4px;
 }
 

@@ -3,8 +3,7 @@
   flex-direction: column;
   width: 20%;
   margin: 20px auto;
-
-  background-color: #255dc0;
+  background-color: var(--color-secondary);
   border-radius: 4px;
 }
 
@@ -13,7 +12,7 @@
   font-size: 18px;
   width: 80%;
   margin: 12px auto;
-  color: #181d30;
+  color: var(--color-white);
 }
 
 .form-input {
@@ -26,14 +25,15 @@
 }
 
 .form-input__element {
+  padding: 5px;
   border: none;
   outline: none;
-  color: #181d30;
+  color: var(--color-background);
   border-radius: 2px;
 }
 
 .form-input__element::placeholder {
-  color: #181d30;
+  color: var(--color-background);
 }
 
 .form-input__element::-webkit-inner-spin-button,
@@ -43,14 +43,12 @@
 
 .form-input__btn {
   font-weight: 700;
-
   width: 80%;
   height: 25px;
   margin: 0 auto;
-
-  background-color: #112860;
-  color: #e0dfd0;
-
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
