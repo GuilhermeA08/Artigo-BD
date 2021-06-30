@@ -2,10 +2,11 @@
   display: flex;
   width: 90%;
   height: 30px;
+  padding: 15px 0;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.6);
 }
 
 .navbar__background {
@@ -15,10 +16,21 @@
 }
 
 .navbar__title {
+  font-size: 24px;
   font-weight: 700;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 20px;
 }
 
 .navbar__pages {
   font-weight: 700;
   text-decoration: none;
+  transition: filter 0.4s ease;
+}
+
+.navbar__pages:hover {
+  filter: brightness(2);
 }
