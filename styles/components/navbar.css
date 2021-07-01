@@ -6,13 +6,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.6);
 }
 
 .navbar__background {
   width: 100%;
   background-color: var(--color-primary);
   border-radius: 4px;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.6);
 }
 
 .navbar__title {

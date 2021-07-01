@@ -2,6 +2,7 @@
 @import url(../components/navbar.css);
 @import url(../components/form-input.css);
 @import url(../components/table.css);
+@import url(../components/footer.css);
 
 main {
   height: calc(100vh - 60px);
