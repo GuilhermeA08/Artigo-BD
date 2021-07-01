@@ -1,0 +1,27 @@
+.table {
+  border: 2px solid var(--color-primary);
+}
+
+.table__header,
+#tbody1 td {
+  color: var(--color-black);
+  border: 1px solid var(--color-primary);
+}
+
+.table__header {
+  padding: 10px;
+  background-color: #d3d3d3;
+  font-weight: 700;
+}
+
+#tbody1 td {
+  padding: 5px;
+}
+
+#tbody1 tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+#tbody1 tr:nth-child(odd) {
+  background-color: #fff;
+}

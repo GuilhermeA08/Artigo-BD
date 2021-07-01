@@ -1,3 +1,12 @@
 @import url(../utils/index.css);
 @import url(../components/navbar.css);
 @import url(../components/form-input.css);
+@import url(../components/table.css);
+
+main {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

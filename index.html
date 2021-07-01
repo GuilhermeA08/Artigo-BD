@@ -8,54 +8,107 @@
     <title>Artigo</title>
   </head>
   <body>
-      <header class="navbar__background">
-          <nav class="navbar">
-              <h1 class="navbar__title">Cadastro</h1>
-              <ul class="navbar__list">
-                  <a class="navbar__pages" href="dashboard.html">Dashboard</a>
-                  <a class="navbar__pages" href="index.html">Home</a>
-                </ul>
-            </nav>
-        </header>
+    <header class="navbar__background">
+      <nav class="navbar">
+        <h1 class="navbar__title">Cadastro</h1>
+        <ul class="navbar__list">
+          <a class="navbar__pages" href="dashboard.html">Dashboard</a>
+          <a class="navbar__pages" href="index.html">Home</a>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="form-input__background">
-      <h1 class="form-input__title">Artigo</h1>
-      <form class="form-input" action="/" onSubmit="JavaScript:writeData()">
-        <input class="form-input__element" type="number" placeholder="Notificados" id="notificados" required/>
-        <input class="form-input__element" type="number" placeholder="Suspeitos" id="suspeitos" required/>
-        <input class="form-input__element" type="number" placeholder="Descartados" id="descartados" required/>
-        <input class="form-input__element" type="number" placeholder="Confirmados" id="confirmados" required/>
-        <input class="form-input__element"
-        type="number"
-        placeholder="Hospitalizados"
-        id="hospitalizados"
-        required/>
-        <input class="form-input__element" type="number" placeholder="Tratamento" id="tratamento" required/>
-        <input class="form-input__element" type="number" placeholder="Curados" id="curados" required/>
-        <input class="form-input__element" type="number" placeholder="Óbitos" id="obitos" required/>
-        <input class="form-input__element" type="date" id="dia" required/>
-        <input class="form-input__btn" type="submit"></input>
-      </form>
-    </section>
+    <main>
+      <section class="form-input__background">
+        <h1 class="form-input__title">Artigo</h1>
+        <form class="form-input" action="/" onSubmit="JavaScript:writeData()">
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Notificados"
+            id="notificados"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Suspeitos"
+            id="suspeitos"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Descartados"
+            id="descartados"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Confirmados"
+            id="confirmados"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Hospitalizados"
+            id="hospitalizados"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Tratamento"
+            id="tratamento"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Curados"
+            id="curados"
+            required
+          />
+          <input
+            class="form-input__element"
+            type="number"
+            placeholder="Óbitos"
+            id="obitos"
+            required
+          />
+          <input class="form-input__element" type="date" id="dia" required />
+          <input class="form-input__btn" type="submit" />
+        </form>
+      </section>
 
+      <div
+        style="
+          background-color: var(--color-secondary);
+          padding: 40px 20px;
+          border-radius: 5px;
+        "
+      >
+        <p style="margin-bottom: 20px" id="data"></p>
 
-    <p id="data"></p>
+        <table class="table">
+          <thead class="table__head">
+            <th class="table__header">Notificados</th>
+            <th class="table__header">Suspeitos</th>
+            <th class="table__header">Descartados</th>
+            <th class="table__header">Confirmados</th>
+            <th class="table__header">Hospitalizados</th>
+            <th class="table__header">Tratamento</th>
+            <th class="table__header">Curados</th>
+            <th class="table__header">Óbitos</th>
+            <th class="table__header">Dia</th>
+          </thead>
 
-    <table>
-      <thead>
-        <th>Notificados</th>
-        <th>Suspeitos</th>
-        <th>Descartados</th>
-        <th>Confirmados</th>
-        <th>Hospitalizados</th>
-        <th>Tratamento</th>
-        <th>Curados</th>
-        <th>Óbitos</th>
-        <th>Dia</th>
-      </thead>
-
-      <tbody id="tbody1"></tbody>
-    </table>
+          <tbody id="tbody1"></tbody>
+        </table>
+      </div>
+    </main>
   </body>
   <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
