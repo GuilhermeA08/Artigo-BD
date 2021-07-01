@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="styles/pages/dashboard.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +8,18 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="row">
+    <header class="navbar__background">
+      <nav class="navbar">
+        <h1 class="navbar__title">Cadastro</h1>
+        <ul class="navbar__list">
+          <a class="navbar__pages" href="dashboard.html">Dashboard</a>
+          <a class="navbar__pages" href="index.html">Home</a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="">
+      <h1>Título</h1>
       <div class="column" style="width: 650px">
         <canvas id="myChart"></canvas>
       </div>
@@ -26,7 +32,38 @@
     <div class="center" style="width: 400px">
       <canvas id="myChart3"></canvas>
     </div>
+
+    <div class="footer__background">
+      <footer class="footer">
+        <h1 class="footer__license">Copyright Ⓒ</h1>
+        <section class="made-by">
+          <h1 class="made-by__title">Made by</h1>
+          <a href="https://www.instagram.com" class="made-by__social">
+            <img
+              class="made-by__img"
+              src="assets/icons/instagram.svg"
+              alt="instagram"
+            />
+            <p class="made-by__author">Augusto</p>
+          </a>
+          <a href="https://www.instagram.com" class="made-by__social">
+            <img
+              class="made-by__img"
+              src="assets/icons/instagram.svg"
+              alt="instagram"
+            />
+            <p class="made-by__author">Tavares</p>
+          </a>
+        </section>
+      </footer>
+    </div>
   </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="firebase.js"></script>
   <script src="chart_data.js"></script>
   <script src="chart_config.js"></script>
