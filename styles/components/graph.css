@@ -1,0 +1,13 @@
+.graph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  height: 10%;
+  margin: 40px auto;
+}
+
+.graph__title {
+  font-weight: 700;
+  font-size: 32px;
+}
