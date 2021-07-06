@@ -2,6 +2,12 @@
   border: 2px solid var(--color-primary);
 }
 
+.table__background {
+  background-color: var(--color-secondary);
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+
 .table__header,
 #tbody1 td {
   color: var(--color-black);
