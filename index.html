@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <link rel="stylesheet" href="styles/pages/index.css" />
+    <link rel="stylesheet" href="styles/utils/responsive.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,30 +84,26 @@
         </form>
       </section>
 
-      <div
-        style="
-          background-color: var(--color-secondary);
-          padding: 40px 20px;
-          border-radius: 5px;
-        "
-      >
+      <div class="table__background">
         <p style="margin-bottom: 20px" id="data"></p>
 
-        <table class="table">
-          <thead class="table__head">
-            <th class="table__header">Notificados</th>
-            <th class="table__header">Suspeitos</th>
-            <th class="table__header">Descartados</th>
-            <th class="table__header">Confirmados</th>
-            <th class="table__header">Hospitalizados</th>
-            <th class="table__header">Tratamento</th>
-            <th class="table__header">Curados</th>
-            <th class="table__header">Óbitos</th>
-            <th class="table__header">Dia</th>
-          </thead>
-
-      <tbody id="tbody1"></tbody>
-      </table>
+        <div class="table__wrapper">
+          <table class="table">
+            <thead class="table__head">
+              <th class="table__header">Notificados</th>
+              <th class="table__header">Suspeitos</th>
+              <th class="table__header">Descartados</th>
+              <th class="table__header">Confirmados</th>
+              <th class="table__header">Hospitalizados</th>
+              <th class="table__header">Tratamento</th>
+              <th class="table__header">Curados</th>
+              <th class="table__header">Óbitos</th>
+              <th class="table__header">Dia</th>
+            </thead>
+  
+        <tbody id="tbody1"></tbody>
+        </table>
+        </div>
     </main>
 
   </div>

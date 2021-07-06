@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1300px) {
+  main {
+    padding: 20px 0 70px 0;
+    height: calc(100vh - 36px);
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .form-input__background {
+    width: 50%;
+    max-width: 70%;
+  }
+
+  .form-input {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form-input__element {
+    width: 40%;
+    max-width: 70%;
+  }
+
+  .table__wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  main {
+    padding: 40px 0 90px 0;
+  }
+
+  .form-input__background {
+    width: 90%;
+  }
+
+  .table__background {
+    width: 60%;
+  }
+
+  .footer {
+    bottom: -4px;
+  }
+}
